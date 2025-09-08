@@ -1,0 +1,73 @@
+@charset 'utf-8';
+@keyframes main-pf-ani {
+    from {
+        opacity: 0;
+        transform: translateX(-10%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes pf-ani {
+    0% {
+        opacity: 0;
+        transform: translateX(-120%);
+    }
+    75% {
+        transform: translateX(5%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+        
+    }
+}
+@keyframes moveL {
+    from {
+        opacity: 0;
+        transform: translateX(15%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes moveR {
+    from {
+        opacity: 0;
+        transform: translateX(-15%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes moveT {
+    from {
+        opacity: 0;
+        transform: translateY(15%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes moveB {
+    from {
+        opacity: 0;
+        transform: translateY(-15%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes op {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

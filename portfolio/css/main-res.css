@@ -1,0 +1,100 @@
+@charset "utf-8";
+/* 모바일만 ~767px */
+@media screen and (max-width: 767px) {
+    .main-container-wrap {height: 100%;}
+    .main-bg-container h1 {font-size: 2em;right: 10px;}
+    .motto-wrap {right: 10px;font-size: 0.9em;color: #fff;}
+    /*sec2*/
+    .sec2-wrap {height: 100%;}
+    .sec2-visual1 {background-image: url('../img/pg1_m_bg.jpg'); background-position: bottom center; padding: 80px 20px 0 30px;}
+    .sec2-visual2 {background-image: url('../img/pg1_m_bg2.jpg'); background-position: bottom center;  padding: 80px 20px 0 30px;}
+    .sec2-visual1 h2, .sec2-visual2 h2 {font-size: 2.5em;}
+    .swiper-pagination {left: -93px !important;}
+    .sec-bottom {left:30px;}
+    .sec3-inner {padding: 80px 20px 0 30px;}
+    .sec3-inner h2 {font-size: 2.5em;}
+    .sec3-nav-wrap {display: none;}
+    .sec3 .progress {display: none;}
+    .progress {display: none;}
+    .sec3-visual1, .sec3-visual2, .sec3-visual5 {background-position: right center; }
+    .sec3-visual3, .sec3-visual4 {background-position: center;}
+    .sec3 .slick-next, .sec3 .slick-prev {display: none;}
+    .sec4-inner {padding: 80px 20px 0 30px;}
+    .sec4-inner h2 {font-size: 2.5em;}
+    .sec4-visual {top: 50%; right: 0; width: 85%;}
+    .sec4-visual img {width: 100%;}
+    .sec4txt {width: 80%; margin-right: 10px; background: rgba(49, 141, 245, 0.8); border-radius: 50px;}
+    .circle1, .circle2 {display: none !important;}
+    .sec4 .slick-next {display: none;}
+    .sec4 .slick-prev {display: none;}
+    .sec5 {height: 100%;}
+    .sec5-container h1 {font-size: 2em;}
+    .sec5-container p {padding: 10px 20px; font-size: 1em;}
+    #contactForm_form {padding: 10px 10px;}
+    #contactForm_term {padding: 0 10px;}
+    .ag-btn {margin-left: 0; margin-top: 0;}
+    #contactForm_term h2 {margin-bottom: 0;}
+    #contact_name {width: 250px; margin-bottom: 10px;}
+    #contact_email {width: 250px; margin-bottom: 10px;}
+    #contactForm .contactForm_agree2 {width: 100%; margin: 10px auto 0; font-size: 0.9em;}
+    .sec6 {height: 100%;}
+    .sec6-inner {padding-top: 90px; padding-left: 30px;}
+    .sec6-inner h2 {font-size: 2.3em;}
+    .sec6-txt-wrap {margin: 30px; font-size: 0.9em;}
+    .sec6-txt-wrap div {}
+    .sec6-nav-wrap {width: 100%;margin: 30px auto;}
+    .sec6-nav-wrap img {width: 160px; opacity: 0.4; padding: 0 30px;}   
+    .sec6-nav-wrap span {font-size: 1.3em; padding-left: 65px;} 
+}
+
+/* 태블릿부터 768px~ */
+@media screen and (min-width: 768px) {
+
+}
+
+/* 태블릿만 768px~1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .main-container-wrap {height: 100%;}
+    .main-bg-container h1 {font-size: 4em; right: 10px;}
+    .motto-wrap {right: 20px; color: #fff;}
+    .sec2-visual1 {background-image: url('../img/pg1_m_bg.jpg'); background-position: bottom center; padding: 100px 20px 0 120px;}
+    .sec2-visual2 {background-image: url('../img/pg1_m_bg2.jpg'); background-position: bottom center; padding: 100px 20px 0 120px;}
+    .swiper-pagination {left: 0 !important;}
+    .sec2-txt {font-size: 1.2em;}
+    .sec-bottom {left: 120px;}
+    .sec3-txt {font-size: 1.2em;}
+    .sec3-inner {padding: 100px 20px 0 120px;}
+    .sec3-nav-wrap {left: 320px; bottom: 100px;}
+    .sec3 .progress {display: none;}
+    .progress {bottom: 170px; left: 320px;}
+    .sec3-visual1, .sec3-visual2, .sec3-visual5 {background-position: right center; }
+    .sec3-visual3, .sec3-visual4 {background-position: center;}
+    .sec4-inner {padding: 100px 20px 0 120px;}
+    .sec4-txt {font-size: 1.2em;}
+    .sec4-visual {top: 35%; right: 0; width: 80%;}
+    .sec4-visual img {width: 100%;}
+    .sec4 .slick-next {display: none;}
+    .sec4 .slick-prev {display: none;}
+    #contactForm_form {padding: 60px 20px 30px 40%;}
+    #contactForm_term {padding: 0 0 0 35%;}
+    #contactForm_term h2{padding: 0 0 30px;}
+    #contactForm .contactForm_agree2 {margin: 20px 40px 0;}
+    .ag-btn {margin-left: 0;}
+    #contact_name {width: 250px; margin-bottom: 10px;}
+    #contact_email {width: 250px; margin-bottom: 10px;}
+    .sec6 {height: 100%;}
+    .sec6-inner {padding-left: 120px;}
+    .sec6-txt-wrap {margin-left: 120px; padding-right: 50px;}
+    .sec6-nav-wrap {width: 100%; }
+    .sec6-nav-wrap img {width: 300px; opacity: 0.4; padding: 0 30px;}   
+    .sec6-nav-wrap span {font-size: 1.8em; padding-left: 70px;} 
+}
+
+/* PC부터 1024px~ */
+@media screen and (min-width: 1024px) {
+
+}
+/* PC 1280px~ */
+@media screen and (min-width: 1280px) {
+
+}

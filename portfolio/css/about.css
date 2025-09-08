@@ -1,0 +1,22 @@
+@charset "UTF-8";
+.sub-container-wrap {position: relative; width: 100%; height: 100vh; color: #fff;}
+.sub-bg-container {width: 100%; height: 100%; background-image: url('../img/about.jpg'); background-size: cover; padding-left: 120px;}
+.sub-bg-container h1 {font-size: 3.75em; color: #fff; padding-top: 300px; padding-bottom: 145px;}
+.submotto-wrap {font-size: 1.8em;}
+
+/*sec2*/
+.sec2 {width: 100%;}
+.sub2-container {position: relative; width: 100%; height: 100vh; background-image: url('../img/intro.jpg'); background-size: cover;}
+.sub2-inner {position: absolute; top: 125px; right: 120px; width: 425px;}
+.bottom {padding-top: 40px;}
+.sub2-txt h2 {padding-bottom: 50px; font-size: 3em;}
+.sub2-txt li {width: 400px; line-height: 2; margin-left: 30px; font-size: 1.8em;}
+.chk::before {position: absolute; left: 0; content: ''; display: block; width: 22px;  height: 22px; margin-top: 16px; background-size: contain; background-image: url('../img/chkicon.png'); background-repeat: no-repeat;}
+.o-chk::before {position: absolute; left: 0; content: '';display: block; width: 22px;  height: 22px; margin-top: 16px; background-size: contain; background-image: url('../img/oicon.png'); background-repeat: no-repeat;}
+.sub2-txt div {line-height: 2; margin-left: 30px; font-size: 1.8em;}
+.sub2-txt p {margin-left: 30px; font-size: 1.2em;}
+
+.sec3-wrap {height: 100vh;}
+
+.shadow .pf-gnb-label::before, .shadow .pf-gnb-label .bar1, .shadow .pf-gnb-label .bar2, .shadow .pf-gnb-label .bar3  {border-color: #292929;}
+#fp-nav {display: none;}

@@ -1,0 +1,208 @@
+@charset 'utf-8';
+/*서브비주얼영역*/
+.sub-visual-container {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+
+}
+.sub-visual {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.sub-visual-inner {
+    position: absolute;
+    left: 0;
+    text-align: center;
+    color: #fff;
+}
+.sub-visual-txt h3 {
+    font-family: 'Nanum Myeongjo', sans-serif;
+}
+.sub-visual-desc {
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+/*서브메인영역*/
+#sub-visual-container {
+    
+}
+.sub-main-container {
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Nanum Gothic';
+}
+.sub-main-wrap {
+    line-height: 1.7;
+    overflow: hidden;
+}
+.sub-main-wrap h2, .sub-main-wrap h3, .sub-main-txt{
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 0 20px;
+}
+.sub-main-wrap h2 {
+    font-family: 'Nanum Myeongjo';
+    font-weight: 800;
+}
+.title-icon {
+    width: 80px;
+    margin: 20px 0;
+}
+.sub-img {
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+
+/*LNB영역*/
+
+#main-container > .lnb-container {
+    line-height: 52px;
+    border: 1px solid #ccc;
+    border-width: 0 0 1px 0;
+    font-weight: bold;
+    padding: 0;
+}
+.lnb-container > .wrap {
+    position: relative;
+    height: 52px;
+    z-index: 10;
+}
+.lnb-container a {
+    display: block;
+}
+.lnb-container ol {
+    position: absolute;
+    top: 0;
+    width: 180px;
+    height: 52px;
+    padding-top: 52px;
+    border: 1px solid #ccc;
+    border-width: 0 1px;
+    left: 60px;
+    overflow: hidden;
+    background-color: #930000;
+}
+.lnb-btn li {
+    border-bottom: 1px solid #aaa;
+}
+.lnb-btn::before {
+    position: absolute;
+    right: 0.8em;
+    top: 0;
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+}
+.lnb-container ol li.on {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.lnb-depth1.h-auto {
+    height: auto;
+}
+.lnb-depth1 a {
+    padding-left: 0.8em;
+}
+.btn-home {
+    float: left;
+    margin-left: 15px;
+    width: 48px;
+    border: 1px solid #ccc;
+    border-width: 0 1px;
+    color: #aaa;
+    text-align: center;
+}
+.lnb-container ul {
+}
+.lnb-depth2 {
+    display: none;
+    max-width: 1200px;
+    margin-left: 245px;
+}
+.lnb-container .lnb-depth1 .url a::after{
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-left: 6px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.lnb-depth2 li {
+    float: left;
+    width: 145px;
+    height: 52px;
+    border-right: 1px solid #ccc;
+    text-align: center;
+    padding: 0 !important;
+}
+
+/*서브바텀영역*/
+#sub-bottom {
+    width: 100%;
+    height: 300px;
+    margin-top: 60px;
+    color: #fff;
+}
+
+.sub-bottom-wrap {
+    height: 100%;
+    background-image: url('../images/bottom_move.jpg');
+    background-position: center;
+    overflow: hidden;
+}
+.sub-bottom-txt {
+    display: inline-block;
+    width: 100%;
+}
+.sub-bottom-txt h3 {
+    max-width: 500px;
+    font-family: 'Nanum Myeongjo';
+}
+.sub-bottom-btn {
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+    width: 150px;
+    height: 45px;
+    margin-top: 30px;
+    padding: 8px 10px 10px 10px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    color: #fff;
+}
+
+
+/*태블릿만*/
+/*모바일*/
+@media screen and (max-width: 767px) {}
+@media screen and (min-width: 768px) and  (max-width: 1279px) {
+    /*lnb영역*/
+    .lnb-container ol {
+        left: 48px;
+        width: 120px;
+    }
+    .btn-home {
+        margin-left: 0;
+    }
+    .lnb-depth2 {
+        margin-left: 171px;
+    }
+    .lnb-depth2 li {
+        width: 120px;
+    }
+}
+/*데스크탑*/
+@media screen and (min-width: 1280px) {
+
+}

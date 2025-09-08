@@ -1,0 +1,54 @@
+@charset 'utf-8';
+/*서브비주얼영역*/
+#sub-visual-container {}
+.sub-visual {
+    background-image: url('/songjung/images/notice_bg1.jpg');
+    background-repeat: no-repeat;
+}
+
+/*서브메인영역*/
+
+/*모바일*/
+@media screen and (max-width: 767px) {
+    .sub-visual-inner {
+        width: 100%;
+        top: 30%;
+    }
+    .sub-visual-txt h3 {
+        font-size: 1.8em;
+    }
+    .lnb-container {
+        display: none;
+    }
+    .sub-visual-desc {
+        margin: 0 10px;
+    }
+}
+/*태블릿부터는*/
+@media screen and (min-width: 768px) {
+    /*서브비주얼영역*/
+
+    .sub-visual-inner {
+        top: 35%;
+    }
+    .sub-visual-txt h3 {
+        font-size: 2.5em;
+    }
+    .sub-visual-desc {
+        font-size: 1.2em;
+    }
+}
+/*태블릿만*/
+@media screen and (min-width: 768px) and  (max-width: 1279px) {
+    .sub-visual-inner {
+        margin-left: 30%;
+        margin-right: 25%;
+    }
+}
+/*데스크탑*/
+@media screen and (min-width: 1280px) {
+    .sub-visual-inner {
+        margin-left: 32%;
+        margin-right: 25%;
+    }
+}

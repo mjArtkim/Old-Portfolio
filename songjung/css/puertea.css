@@ -1,0 +1,148 @@
+@charset 'utf-8';
+/*서브비주얼영역*/
+#sub-visual-container {}
+.sub-visual {
+    background-image: url('/songjung/images/puer_bg1.jpg');
+    background-repeat: no-repeat;
+}
+
+
+/*서브메인영역*/
+
+.list-e-img, .list-r-img{
+    float: left;
+    width: 43%;
+    box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.1);
+}
+.list-e-img img, .list-r-img img {
+    width: 100%;
+}
+.list-t-img img {
+    width: 80%;
+    margin: 10px auto;
+}
+.sub-img span {
+    font-size: 0.8em;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    line-height: 0.9;
+}
+
+
+/*모바일*/
+@media screen and (max-width: 767px) {
+    .sub-visual-inner {
+        top: 30%;
+        margin: 0 6%;
+    }
+    .sub-visual-txt h3 {
+        font-size: 1.8em;
+    }
+    .lnb-container {
+        display: none;
+    }
+    .sub-main-wrap h2, h3, .sub-main-txt{
+        margin: 10px auto;
+    }
+    .sub-img {
+        max-width: 500px;
+    }
+    .list-e-img, .list-r-img{
+        width: 43.3%;
+        margin: 10px;
+    }
+    .sub-main-wrap h3 {
+        font-size: 1.1em;
+    }
+    .sub-main-txt {
+        font-size: 0.95em;
+    }
+    /*서브바텀영역*/
+    #sub-bottom {
+        text-align: center;
+    }
+    .sub-bottom-txt {
+        margin-top: 50px;
+    }
+    .sub-bottom-txt h3 {
+        padding: 0 20px;
+        font-size: 1.1em;
+    }
+}
+/*태블릿부터는*/
+@media screen and (min-width: 768px) {
+    /*서브비주얼영역*/
+
+    .sub-visual-inner {
+        top: 35%;
+    }
+    .sub-visual-txt h3 {
+        font-size: 2.5em;
+    }
+    .sub-visual-desc {
+        font-size: 1.2em;
+    }
+    /*서브메인영역*/
+    .title-icon {
+        margin-top: 40px;
+    }
+    .sub-main-wrap h2, .sub-main-wrap h3, .sub-main-txt{
+        margin: 20px auto;
+    }
+    .sub-main-wrap h2 {
+        font-size: 2em;
+    }
+    .sub-main-wrap h3 {
+        font-size: 1.5em
+    }
+    .sub-main-txt {
+        font-size: 1.1em;
+    }
+    .sub-img {
+        max-width: 1000px;
+    }
+    .list-e-img {
+        width: 28%;
+        margin: 19px;
+    }
+    .list-r-img {
+        width: 45%;
+        margin: 19px;
+    }
+    .list-t-img img {
+        float: left;
+        width: 50%;
+        padding: 19px;
+       
+    }
+    .sub-img span {
+        font-size: 1em;
+        padding-top: 5px;
+        padding-bottom: 7px;
+    }
+    /*서브바텀영역*/
+    .sub-bottom-txt {
+        margin-top: 70px;
+    }
+    .sub-bottom-txt h3 {
+        font-size: 1.2em;
+    }
+}
+/*태블릿만*/
+@media screen and (min-width: 768px) and  (max-width: 1279px) {
+    .sub-visual-inner {
+        margin:0 20%;
+    }
+    .sub-bottom-txt {
+        padding-left: 8%;
+    }
+}
+/*데스크탑*/
+@media screen and (min-width: 1280px) {
+    .sub-visual-inner {
+        margin: 0 34.5%;
+    }
+    .sub-bottom-txt {
+        padding-left: 24%;
+    }
+}

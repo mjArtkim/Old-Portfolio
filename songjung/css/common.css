@@ -1,0 +1,515 @@
+@charset 'utf-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Nanum+Myeongjo:wght@400;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Outlined');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*:before, *:after {
+    box-sizing: border-box;
+}
+
+html {}
+
+body {
+    background-color: #fff;
+    font-family: 'Playfair Display', 'Nanum Gothic', sans-serif;
+    font-size: 15px;
+    color: #333;
+    line-height: 1.6;
+}
+body.hidden {
+    overflow: hidden;
+}
+input, select, textarea {
+    font-family: 'Playfair Display', 'Nanum Gothic', sans-serif;
+    font-size: 15px;
+    color: #000;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+ol, ul {list-style: none;}
+img {
+    border: 0;
+    vertical-align: top;/*It is mainly used for Top and Middle*/
+}
+
+/*public class-------------------------------*/
+
+.wrap {
+    width: 100%;
+    max-width: 1560px;
+    padding: 0;
+    margin: auto;
+}
+.sound-only {/*음성 서비스 시스템 만들어주는 것, 장애인 분들을 위한 코딩*/  
+    position: absolute;
+    left: -9999em;
+    top: -9999em;
+}
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+h1, h2, h3, h4, h5 { 
+    font-family: 'Playfair Display', 'Nanum Gothic', sans-serif;
+}
+
+.more-bnt {
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+    width: 140px;
+    height: 40px;
+    padding: 5px 0 0 35px;
+    color: #000;
+    border: 1px solid rgba(0, 0, 0, 1);
+}
+.more-bnt::before, .more-bnt::after {
+    position: absolute;
+    content: '';
+    right: 25px;
+    top: 50%;
+}
+.more-bnt::before {
+    width: 15px;
+    height: 2px;
+    margin-top: -1px;
+    border: 1px solid fff;
+    background-color: #000;
+}
+.more-bnt::after {
+    width: 8px;
+    height: 8px;
+    margin-top: -4px;
+    border: 2px solid #000;
+    border-width: 2px 2px 0 0;
+    transform: rotate(45deg);
+}
+.m-bnt-wh {
+    position: relative;
+    display: inline-block;
+    font-size: 1em;
+    width: 140px;
+    height: 40px;
+    margin-top: 53px;
+    padding: 5px 0 0 35px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.m-bnt-wh::before, .m-bnt-wh::after {
+    position: absolute;
+    content: '';
+    right: 25px;
+    top: 50%;
+}
+.m-bnt-wh::before {
+    width: 15px;
+    height: 2px;
+    margin-top: -1px;
+    border: 1px solid fff;
+    background-color: #fff;
+}
+.m-bnt-wh::after {
+    width: 8px;
+    height: 8px;
+    margin-top: -4px;
+    border: 2px solid #fff;
+    border-width: 2px 2px 0 0;
+    transform: rotate(45deg);
+}
+span {
+    display: block;
+}
+
+/* Public section design-----------------------*/
+
+.wh, .wh:hover, .wh a, .wh a:hover {
+    color: #fff !important;
+}
+.bk, .bk:hover, .bk a, .bk a:hover {
+    color: #000
+     !important;
+}
+.rb, .rb:hover, .rb a, .rb a:hover {
+    color: #930000;
+}
+.brb, .brb:hover, .brb a, .brb a:hover {
+    color: #1a130f;
+}
+
+/*skip*/
+
+
+#skip {}
+
+#skip a {
+    position: fixed;
+    left: 0;
+    top: -100px;
+    display: block;
+    width: 100%;
+    background-color: #1a130f;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    z-index: 9999;
+    transition: top 0.2s;
+}
+#skip a:focus {
+    top: 0;
+}
+
+
+/*header*/
+
+#header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 11;
+}
+#header::after {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    content: '';
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.logo {
+    float: left;
+    width: 48px;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+.logo a {
+    display: block;
+    padding-top: 100%;
+    background: url('../images/logo_m.png') center center/contain no-repeat;
+}
+.bg-wh {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 100%;
+    height: 400px;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.bg-gnb-img { /*메뉴대표이미지*/
+    background: url('/songjung/images/depth2_bg0.jpg') left center;
+    background-repeat: no-repeat;
+    height: 201px;
+    margin-top: 40px;
+}
+/*모바일태블릿영역*/
+.m-gnb-label {
+    position: fixed;
+    right: 15px;
+    top: 0;
+    width: 32px;
+    height: 32px;
+    margin-top: 15px;
+}
+#m-gnb {
+    position: fixed;
+    font-family: 'Playfair Display', 'Nanum Myeongjo';
+    right: -100%;
+    top: 60px;
+    width: 100%;
+    height: calc(100% - 60px);
+    padding: 12% 10%;
+    background-color: rgba(255,255,255,1);
+    font-size: 1.1em;
+    overflow: auto;
+    transition: right 0.6s;
+}
+
+#m-gnb-chk {
+    display: none;
+}
+
+.m-gnb-label::before, .m-gnb-label::after {
+    content: '';
+}
+.m-gnb-label .bar, .m-gnb-label::before, .m-gnb-label::after {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+    margin-top: -1px;
+    border-radius: 2px;
+    background-color: #fff;
+    transition: 0.3s;
+}
+.m-gnb-label:before {
+    transform: translateY(-10px);
+}
+.m-gnb-label::after {
+    transform: translateY(10px);
+}
+#m-gnb a {
+    display: block;
+    color: #000;
+}
+#m-gnb ul {
+    color: #000;
+}
+#m-gnb .depth1 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+#m-gnb .depth1 > a {
+    position: relative;
+    width: 100%;
+    padding: 5px 20px;
+    line-height: 100px;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #000;
+}
+
+
+#m-gnb .depth2 {
+    display: none;
+    line-height: 2;
+    padding: 24px 10px 80px;
+    width: 100%;
+    font-weight: 500;
+    background-color: #fff;
+}
+
+#m-gnb .depth1 > a {
+    line-height: 2.4;
+    font-size: 1.3em;
+}
+#m-gnb .depth1 > a::after {/*아래방향 화살표*/
+    float: right;
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin-top: 18px;
+    margin-right: 15px;
+    border: 2px solid #000;
+    border-width: 0px 2px 2px 0px;
+    transform: rotate(45deg);
+
+}
+#m-gnb .depth2 {
+    display: none;
+    padding: 0.2em 0em 2em 6px;
+    line-height: 2;
+}
+
+/*모바일 메뉴 활성화 */
+#m-gnb-chk:checked ~ #m-gnb {
+    right: 0;
+}
+#m-gnb .depth1.active  > a {
+    color: #000;
+}
+#m-gnb .depth1.active > a::after {
+    margin-top: 18px;
+}
+#m-gnb .depth1.active .depth2 {
+    display: block;
+    margin-left: 30px;
+}
+#m-gnb img {
+    width: 100%;
+}
+/*#m-gnb {
+    background-image: url('../images/m_gnb_bg.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+*/
+/*데스크탑영역*/
+#s-gnb {
+    display: none;
+    position: relative;
+    font-family: 'Playfair Display', 'Nanum Myeongjo';
+    float: right;
+}
+
+#s-gnb a {
+    display: block;
+}
+#s-gnb ul {
+    color: #000;
+}
+#s-gnb .depth1 {
+    float: left;
+}
+#s-gnb .depth1 > a {
+    position: relative;
+    width: 100%;
+    padding: 0 25px;
+    line-height: 100px;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #fff;
+}
+
+#s-gnb .depth2 .url a::after{
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-left: 6px;
+    border-radius: 50%;
+    background-color: #930000;
+}
+#m-gnb .depth2 .url a::after{
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-left: 6px;
+    border-radius: 50%;
+    background-color: #930000;
+}
+#s-gnb .depth2 {
+    display: none;
+    line-height: 2;
+    padding: 24px 10px 80px;
+    width: 100%;
+    height: 400px;
+    font-weight: 500;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+#s-gnb .depth2 > li {
+}
+#s-gnb .depth2 > li a {
+    font-size: 1.37em;
+    padding: 0 10px;
+
+}
+#s-gnb .depth1 > a::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #930000;
+    content: '';
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+#s-gnb .depth1:hover > a:after, .depth1:focus-within > a:after {
+    transform: scaleX(1.0);
+    transition-duration: 0.5s;
+}
+
+
+.gototop {
+    right: 20px;
+    position: fixed;
+    bottom: 70px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding-top: 5px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 30px;
+    font-size: 1.2em;
+    font-size: 700;
+
+    box-sizing: border-box;
+    color: #eee;
+}
+.gototop:hover {
+    background-color: #930000;
+    color: #fff;
+}
+
+/*footer*/
+
+
+#footer {
+    /* display: none; */
+    background-color: #1a130f;
+    color: #fff;
+    font-family: 'Nanum Gothic';
+}
+.ft-wrap {
+    position: relative;
+    width: 94%;
+    padding: 120px 0;
+    margin: auto;
+    background-image: url('../images/logo.png');
+    background-size: 140px;
+    background-repeat: no-repeat;
+    background-position: 0 30px;
+}
+.ft-line {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 120px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.ft-info {
+    font-size: 0.9em;
+    line-height: 2;
+}
+.ft-info dl {
+    float: left;
+    
+}
+.ft-info dl::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin-bottom: 1em;
+}
+.ft-info dt {
+    float: left;
+    clear: both;
+}
+.ft-info dt:after {
+    content: ':';
+    padding: 0 0.3em;
+}
+.ft-info dd {
+    float: left
+}
+.copy {
+    clear: both;
+    margin-top: 1em;
+    font-size: 0.85em;
+    color: #999;
+}
+
+.ft-sns {
+    font-size: 1.3em;
+    position: absolute;
+    right: 0;
+    top: 40px;
+}
+.ft-sns a {
+    display: inline-block;
+    padding: 0.3em 0.4em;
+    color: #999;
+}
+.ft-sns a:hover {
+    color: #930000;
+}
+

@@ -1,0 +1,76 @@
+@charset 'utf-8';
+/*모바일 767px*/
+@media screen and (max-width: 767px)  {
+    #bo_list thead {
+        display: none;
+    }
+    #bo_list .tbl_wrap table {
+        border: 0;
+    }
+   
+    #bo_list table, #bo_list tr, #bo_list td, #bo_list tr {
+        display: block;
+    }
+    #bo_list tr {
+        position: relative;
+        border: 1px solid #efefef !important;
+        padding: 10px;
+        margin: 10px 5px;
+    }
+    #bo_list td, #bo_list .td_chk {
+        border: 0;
+    }
+    #bo_list tr::after {
+        content: '';
+        display: block;
+        clear: both;
+    } 
+    #bo_list .td_chk {
+        position: absolute;
+        left: 2px;
+        top: 12px;
+    }
+    #bo_list td {
+       float: left;
+       padding: 0 !important;
+    }
+    #bo_list .td_num2, #bo_list .bo_cate_link {
+        width: auto;
+    }
+    #bo_list .td_num2 {
+        position: relative;
+        top: 2px;
+        width: 30px;
+        font-weight: bold;
+    }
+    #bo_list .td_subject {
+        width: calc(100% - 30px);
+        margin-bottom: 10px;
+    }
+    #bo-list .bo_tit {
+        line-height: 1.6;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+    #bo_list .td_name {
+        clear: both;
+    }
+    #bo_list .td_name, #bo_list .td_num {
+        border-right: 1px solid #efefef;
+    }
+    #bo_list .td_name, #bo_list .td_num, #bo_list .td_datetimw {
+        line-height: 18px;
+    }
+}
+/*태블릿*/
+@media screen and (min-width: 768px) {
+    
+}
+/*태블릿만*/
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    
+}
+/*PC*/
+@media screen and (min-width: 1280px) {
+
+}

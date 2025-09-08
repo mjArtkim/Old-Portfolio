@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=3">
+    <title>SongJoung</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/common_res.css">
+    <link rel="stylesheet" href="css/puertea.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/songjung/images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/songjung/images/android-icon-192x192.png">
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body class="pg5-1">
+    <div id="skip">
+        <a href="#container">본문 바로가기</a>
+        <a href="#s-gnb">주메뉴 바로가기</a>
+        <a href="#lnb">서브메뉴 바로가기</a>
+        <a href="#footer">하단정보 바로가기</a>
+    </div><!--skip-->
+    <div id="header">
+        <div class="bg-wh"><span class="sound-only">흰배경</span>
+            <div class="wrap bg-gnb-img"><span class="sound-only">메뉴 대표 이미지</span></div>
+        </div>
+        <div class="wrap clearfix">
+            <h1 class="logo"><a href="index.html" title="처음으로"><span class="sound-only">송정로고</span></a></h1>
+            <h2 class="sound-only">주메뉴</h2>
+            <input type="checkbox" id="m-gnb-chk"></input>
+            <label for="m-gnb-chk" class="m-gnb-label">
+                <span class="sound-only">사이드 메뉴 버튼</span>
+                <span class="bar"></span>
+            </label>
+            <ol id="m-gnb" class="clerfix">
+                <li class="depth1">
+                    <a href="#">보이차</a>
+                    <ul class="depth2">
+                        <li>
+                            <a href="puertea.html">보이차</a>
+                            <a>병차</a>
+                            <a>전차</a>
+                            <a>타차</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="depth1">
+                    <a href="#">자사호</a>
+                    <ul class="depth2">
+                        <li>
+                            <a href="jasaho.html">방고호</a>
+                            <a>수평호</a>
+                            <a>서시호</a>
+                            <a>덕중호</a>
+                            <a>철구호</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="depth1">
+                    <a href="#">음용법</a>
+                    <ul class="depth2">
+                        <li>
+                            <a href="taest.html">차잎</a>
+                            <a>물</a>
+                            <a>다기</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="depth1">
+                    <a href="#">다도체험</a>
+                    <ul class="depth2">
+                        <li>
+                            <a href="dado.html">체험</a>
+                            <a>음미법</a>
+                            <a>주의사항</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="depth1">
+                    <a href="#">송정소개</a>
+                    <ul class="depth2">
+                        <li>
+                            <a href="int.html">인사말</a>
+                            <a>연혁</a>
+                            <a>자격증</a>
+                            <a>오시는길</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="depth1">
+                    <a href="#">공지사항</a>
+                    <ul class="depth2">
+                        <li>
+                            <a href="notice.html">공지사항</a>
+                            <a>문의하기</a>
+                        </li>
+                    </ul>
+                </li>
+                <img src="images/m_gnb_bg.jpg" alt="메뉴이미지">
+            </ol>
+            <ol id="gnb" class="clerfix">
+                <li class="depth1">
+                    <a href="puertea.html">보이차</a>
+                    <ul class="depth2">
+                        <li>
+                            <a href="puertea.html">보이차</a>
+                            <a>병차</a>
+                            <a>전차</a>
+                            <a>타차</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="depth1">
+                    <a href="jasaho.html">자사호</a>
+                    <ul class="depth2">
+                        <li>
+                            <a href="jasaho.html">방고호</a>
+                            <a>수평호</a>
+                            <a>서시호</a>
+                            <a>덕중호</a>
+                            <a>철구호</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="depth1">
+                    <a href="taest.html">음용법</a>
+                    <ul class="depth2">
+                        <li>
+                            <a href="taest.html">차잎</a>
+                            <a>물</a>
+                            <a>다기</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="depth1">
+                    <a href="dado.html">다도체험</a>
+                    <ul class="depth2">
+                        <li>
+                            <a href="dado.html">체험</a>
+                            <a>음미법</a>
+                            <a>주의사항</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="depth1">
+                    <a href="int.html">송정소개</a>
+                    <ul class="depth2">
+                        <li>
+                            <a href="int.html">인사말</a>
+                            <a>연혁</a>
+                            <a>자격증</a>
+                            <a>오시는길</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="depth1">
+                    <a href="notice.html">공지사항</a>
+                    <ul class="depth2">
+                        <li>
+                            <a href="notice.html">공지사항</a>
+                            <a>문의하기</a>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+    </div><!--E:header-->
+
+
+    <div id="sub-visual-container wrap">
+        <h2 class="sound-only">메인이미지와 텍스트</h2>
+        <div class="sub-visual-container-wrap clearfix">
+            <div class="sub-visual-inner">
+                <div class="sub-visual-txt">
+                    <h3>보이차 [普洱茶]</h3>
+                    <div class="sub-visual-desc">
+                        <span>보이차는 발효한 흑차의 일종으로 여러 지방에서 생산된 차를 
+                            푸얼현(普洱縣) 차시장에서 모아 출하하기 때문에 푸얼차[普洱茶]라는 이름이 붙었습니다.  </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lnb-container">
+            <div class="wrap">
+                <a href="index.html" title="홈으로" class="btn-home"><i class="fa-solid fa-house"></i></a>
+                <ol class="lnb-depth1 fa-caret-down lnb-btn wh">
+                    <li><a href="puertea.html">보이차</a></li>
+                    <li><a href="jasaho.html">자사호</a></li>
+                    <li><a href="taest.html">음용법</a></li>
+                    <li><a href="dado.html">다도체험</a></li>
+                    <li><a href="int.html">송정소개</a></li>
+                    <li><a href="notice.html">공지사항</a></li>
+                </ol>
+                <ul class="lnb-depth2 depth2-1">
+                    <li><a href="#sub-e">병차</a></li>
+                    <li><a href="#sub-r">전차</a></li>
+                    <li><a href="#sub-t">타차</a></li>
+                </ul>
+                <ul class="lnb-depth2 depth2-2">
+                    <li><a href="#bang">방고호</a></li>
+                    <li><a href="#su">수평호</a></li>
+                    <li><a href="#seo">서시호</a></li>
+                    <li><a href="#duck">덕중호</a></li>
+                    <li><a href="#chel">철구호</a></li>
+                </ul>
+                <ul class="lnb-depth2 depth2-3">
+                    <li><a href="#">차잎</a></li>
+                    <li><a href="#">물</a></li>
+                    <li><a href="#">다기</a></li>
+                </ul>
+                <ul class="lnb-depth2 depth2-4">
+                    <li><a href="#">체험</a></li>
+                    <li><a href="#">음미법</a></li>
+                    <li><a href="#">주의사항</a></li>
+                </ul>
+                <ul class="lnb-depth2 depth2-5">
+                    <li><a href="#">인사말</a></li>
+                    <li><a href="#">연혁</a></li>
+                    <li><a href="#">자격증</a></li>
+                    <li><a href="#">오시는길</a></li>
+                </ul>
+                <ul class="lnb-depth2 depth2-6">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">문의하기</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="footer">
+        <h2 class="sound-only">하단정보</h2>
+        <div class="ft-wrap wrap clearfix">
+            <div class="ft-logo"><span class="sound-only">하단로고</span></div>
+            <div class="ft-line"><span class="sound-only">line</span></div>
+            <dl class="ft-info">
+                <dt>상호명</dt>
+                <dd>송정명차</dd>
+                <dt>사업자등록번호</dt>
+                <dd>2122154929</dd>
+                <dt>주소</dt>
+                <dd>
+                    <span>경기도 하남시 망월동834,</span>
+                    <span>834-1 지식센터 나동 630</span>
+                </dd>
+                <dt>전화번호</dt>
+                <dd><a href="tel:010-5920-2192" class="wh">010-5920-2192</a></dd>
+                <dt>대표자</dt>
+                <dd>이동교</dd>
+                <dt class="sound-only">저작권</dt>
+                <dd class="copy">COPYRIGHT &copy; 2022 SongJoung All Right Reserved.</dd>
+            </dl>
+            <div class="ft-sns">
+                <a href="#"><span class="sound-only">틱톡</span>
+                    <i class="fa-brands fa-tiktok"></i></a>
+                <a href="#"><span class="sound-only">페이스북</span>
+                    <i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://instagram.com/songj_mc?utm_medium=copy_link"><span class="sound-only">인스타그램</span>
+                    <i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><span class="sound-only">유투브</span>
+                    <i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </div><!--E:footer-->
+</body>
+</html>

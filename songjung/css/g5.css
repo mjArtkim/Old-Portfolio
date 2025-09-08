@@ -1,0 +1,4 @@
+@charset 'utf-8';
+#main-container > div {
+    padding: 40px 1% 100px;
+}
