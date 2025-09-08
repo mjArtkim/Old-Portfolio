@@ -7,10 +7,10 @@ Although it is no longer in active use, this project reflects the foundation of 
 
 ## 🛠️ Languages Used
 
-- **PHP** – 69.7%
-- **JavaScript** – 16.9%
-- **CSS** – 8.3%
-- **HTML** – 5.1%
+- **PHP**
+- **JavaScript**
+- **CSS**
+- **HTML**
 
 ## 📌 Notes
 
